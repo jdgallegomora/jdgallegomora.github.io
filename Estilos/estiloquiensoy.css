@@ -1,0 +1,116 @@
+body,
+html {
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Road Rage', sans-serif;
+  background: url(quiensoy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    list-style: none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5rem;
+    height: 15vh;
+}
+
+.sign {
+    font-family: 'comforter', cursive;
+    font-size: 4rem;
+    cursor: grab;
+    color: #F05F44;
+    margin-right: auto;
+    text-align: right;
+    
+}
+
+li{
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color:beige;
+}
+
+a:hover {
+    color: #F05F44;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 0.8px solid #F05F44;
+    max-width: 1500px;
+    opacity: 1;  
+}
+
+.push {
+    margin-left: auto;
+}
+
+h1 {
+    font-family: 'comforter', cursive;
+    font-size: 4rem;
+    cursor: grab;
+    color: black;
+    grid-area: texto1;
+}
+
+h2 {
+    font-family: 'comforter', cursive;
+    font-size: 2rem;
+    cursor: grab;
+    color: black;
+    grid-area: texto2;
+}
+
+.quiensoy {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " . texto1"
+    " . texto2";
+    height: 70vh;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+@media only screen and (max-width:950px) {
+    .main-nav {
+      font-size: 0.9em;
+      padding: 0;
+    }
+    .sign {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5rem;
+    color: beige;
+    font-family: "Road Rage";
+    margin-top: 10px;
+  }
+
+footer:hover {
+    font-style: italic;
+}
+
